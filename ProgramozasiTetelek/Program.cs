@@ -64,12 +64,25 @@ namespace ProgramozasiTetelek
             }
             else Console.WriteLine("Nincs 69 a tömbben");
         }
+        static void Kivalasztas()
+        {
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("Kiválasztás tétele");
+            int i = 0;
+            while (i < tomb.Length && tomb[i] != 50)
+            {
+                i++;
+            }
+            Console.WriteLine("Az 50 {0}. helyen található.",i+1);
+            
+        }
         static void Main(string[] args)
         {
             TombKiiras();
             Osszegzes();
             Szamolas();
             Eldontes();
+            Kivalasztas();
             Console.ReadKey();
         }
     }
