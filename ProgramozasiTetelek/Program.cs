@@ -33,10 +33,26 @@ namespace ProgramozasiTetelek
             Console.WriteLine();
             Console.WriteLine(osszeg);
         }
+        static void Szamolas()
+        {
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("A tömb elemei közül hány darab osztható hárommal?");
+            int harommal = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (tomb[i]%3==0)
+                {
+                    harommal++;
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine("A tömbben {0} szám osztható hárommal.",harommal);
+        }
         static void Main(string[] args)
         {
             TombKiiras();
             Osszegzes();
+            Szamolas();
             Console.ReadKey();
         }
     }
