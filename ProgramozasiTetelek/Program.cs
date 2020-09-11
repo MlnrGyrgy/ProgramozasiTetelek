@@ -48,11 +48,28 @@ namespace ProgramozasiTetelek
             Console.WriteLine();
             Console.WriteLine("A tömbben {0} szám osztható hárommal.",harommal);
         }
+        static void Eldontes()
+        {
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("Van-e 69 a tömbben?");
+            int i = 0;
+            while (i<tomb.Length && tomb[i] != 69)
+            {
+                i++;
+            }
+            Console.WriteLine();
+            if (i<tomb.Length)
+            {
+                Console.WriteLine("Van 69 a tömbben.");
+            }
+            else Console.WriteLine("Nincs 69 a tömbben");
+        }
         static void Main(string[] args)
         {
             TombKiiras();
             Osszegzes();
             Szamolas();
+            Eldontes();
             Console.ReadKey();
         }
     }

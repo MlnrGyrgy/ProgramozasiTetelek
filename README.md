@@ -17,3 +17,7 @@
  -Megszamolas() metódus
     - hány hárommal osztható elem van a tömbben
     - eredmény kiíratása console-ra
+## Eldöntés
+ - Eldontes() metódus létrehozása
+   - Van-e a tömbben 69.
+   - Kiírni, hogy "van" vagy "nincs".
