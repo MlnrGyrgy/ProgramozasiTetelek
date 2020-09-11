@@ -89,14 +89,28 @@ namespace ProgramozasiTetelek
             }
             else Console.WriteLine("Nem található a tömbben az 50-es elem.");
         }
+        static void Maximum()
+        {
+            int max = 0;
+            for (int i = 1; i < tomb.Length; i++)
+            {
+                if (tomb[i]>tomb[max])
+                {
+                    max = i;
+                }
+            }
+            Console.WriteLine("{0} ", tomb[max]);
+
+        }
         static void Main(string[] args)
         {
             //TombKiiras();
             //Osszegzes();
             //Szamolas();
             //Eldontes();
-            // Kivalasztas();
-            Kereses();
+            //Kivalasztas();
+            //Kereses();
+            Maximum();
             Console.ReadKey();
         }
     }
