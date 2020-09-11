@@ -22,6 +22,9 @@
    - Van-e a tömbben 69.
    - Kiírni, hogy "van" vagy "nincs".
  ## Kiválasztás
-  - Kivalasztas() metódus
+  - Kivalasztas() metódus létrehozása
     - Hányadik az 50.
     - Kiírja a helyét a tömbben. 
+ ## Keresés (lineáris)
+   - Kereses() metódus létrehozása
+     -Van-e benne 50, és ha van hányadik?

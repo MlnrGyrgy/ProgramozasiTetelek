@@ -76,13 +76,27 @@ namespace ProgramozasiTetelek
             Console.WriteLine("Az 50 {0}. helyen található.",i+1);
             
         }
+        static void Kereses()
+        {
+            int i = 0;
+            while (i < tomb.Length&&tomb[i] != 50)
+            {
+                i++;
+            }
+            if (i<tomb.Length)
+            {
+                Console.WriteLine("A tömb tartalmazza az 50-es számot. \nA(z) {0}. helyen található.",i+1);
+            }
+            else Console.WriteLine("Nem található a tömbben az 50-es elem.");
+        }
         static void Main(string[] args)
         {
-            TombKiiras();
-            Osszegzes();
-            Szamolas();
-            Eldontes();
-            Kivalasztas();
+            //TombKiiras();
+            //Osszegzes();
+            //Szamolas();
+            //Eldontes();
+            // Kivalasztas();
+            Kereses();
             Console.ReadKey();
         }
     }
